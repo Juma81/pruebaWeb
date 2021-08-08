@@ -1,0 +1,246 @@
+/* archivo que da estilo al index.html */
+@import url(menu.css);
+@import url(servicio.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: rgba(16, 145, 16, 0.137);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 8px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(147, 246, 208, 0.219) 0%, rgba(214, 241, 183, 0.219) 100%), url(../img/andhika-soreng-US06QF_sxu8-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+   }
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.691);
+}
+
+/* Galeria */
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    height: 300px;
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    box-shadow: 0 10px 6px rgba(8, 138, 14, 0.246);
+    cursor: pointer;
+    }
+
+
+/*Para juntar los elementos */
+.experts{
+    display: flex;
+    justify-content: space-evenly;/*separar los elementos*/
+    align-items: center;
+    flex-wrap: wrap;/* por si el elemento no cabe en la misma linea que lo mande hacia abajo*/
+}
+
+/*Clase cont-expert*/
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    color: rgba(0, 73, 0, 0.993);
+    margin-bottom: 20px;
+}
+
+.cont-expert img{
+    width: 80%;
+    display: block;
+    margin: 50px;
+    border:  1px solid rgba(4, 88, 29, 0.541);
+    border-radius: 50%;
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400 ;
+}
+
+/*Footer*/
+
+footer{
+    background: rgba(4, 93, 23, 0.493);
+    padding-bottom: 0.1px;
+
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px ;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+
+.social-media-icon:hover{
+    background: #fff;
+    color: rgba(4, 93, 23, 0.493);
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .checklist-servicio{
+        width: 80%;
+    }
+    .service{
+        margin-bottom: 30px;
+    }
+    
+    .img-galeria{
+        width: 45%;
+    }
+    .cont-expert{
+        width: 80%;
+    }
+   
+.footer-content{
+    justify-content: center;
+}
+
+    .social-media{
+        width:80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+
+        .contact-us{
+            text-align: center;
+            width: 80%;
+            margin-bottom: 40px;
+        }
+}
+
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+.hamburger{
+    top: 20px;
+    right: 20px;
+}
+
+.titulo{
+    font: size 30px; ;
+}
+
+.subtitulo{
+    font-size: 30px;
+}
+
+
+.img-galeria{
+    width: 95%;
+}
+
+.social-media{
+    width: 100%;
+}
+
+.contact-us{
+    width: 90%s;
+}
+
+}
+
+.email{
+    text-decoration: none;
+    color: #fff;
+}
